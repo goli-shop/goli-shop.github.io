@@ -35,3 +35,105 @@
     </p>
 </body>
   </html>
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فروشگاه بافتنی گلی</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>فروشگاه بافتنی گلی</h1>
+        <nav>
+            <a href="#products">محصولات</a>
+            <a href="#about">درباره ما</a>
+            <a href="#contact">تماس با ما</a>
+        </nav>
+    </header>
+
+    <!-- اسلایدر محصولات -->
+    <section id="slider">
+        <div class="slide active">
+            <img src="https://www.instagram.com/p/CQTtOVmgTDQ/?igsh=MWxoaDB1ODhkajBzeA==" alt="ماشین بافتنی رنگی">
+        </div>
+        <div class="slide">
+            <img src="https://www.instagram.com/p/CP_G9TRrxDY/?img_index=1&igsh=MTkwY3NzajIzdGtwdg==" alt="عروسک بنفشه">
+        </div>
+        <div class="slide">
+            <img src="https://www.instagram.com/p/CQq37mOA4WH/?igsh=YWJvdG1wbmxnZDVk" alt="سیندرلا">
+        </div>
+        <div class="slide">
+            <img src="https://www.instagram.com/p/CQ6URJ0gq8j/?igsh=d3YwaG8zaGV4Y2Ni" alt="سفید برفی">
+        </div>
+        <div class="slide">
+            <img src="https://www.instagram.com/p/CRMUyGggUWk/?igsh=MWdjdjF0NHNqaHVxZw==" alt="آلیس">
+        </div>
+    </section>
+
+    <!-- محصولات -->
+    <section id="products">
+        <h2>محصولات ما</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="https://www.instagram.com/p/CQTtOVmgTDQ/?igsh=MWxoaDB1ODhkajBzeA==" alt="ماشین بافتنی رنگی">
+                <h3>ماشین بافتنی رنگی</h3>
+                <p>قیمت: 160,000 تومان</p>
+            </div>
+            <div class="product">
+                <img src="https://www.instagram.com/p/CP_G9TRrxDY/?img_index=1&igsh=MTkwY3NzajIzdGtwdg==" alt="عروسک بنفشه">
+                <h3>عروسک بنفشه</h3>
+                <p>قیمت: 480,000 تومان</p>
+            </div>
+            <div class="product">
+                <img src="https://www.instagram.com/p/CQq37mOA4WH/?igsh=YWJvdG1wbmxnZDVk" alt="سیندرلا">
+                <h3>سیندرلا</h3>
+                <p>مشخصات: مفتول گذاری شده بافته شده با کاموای اکریل بافت</p>
+                <p>قیمت: 400,000 تومان</p>
+            </div>
+            <div class="product">
+                <img src="https://www.instagram.com/p/CQ6URJ0gq8j/?igsh=d3YwaG8zaGV4Y2Ni" alt="سفید برفی">
+                <h3>سفید برفی</h3>
+                <p>قیمت: 400,000 تومان</p>
+            </div>
+            <div class="product">
+                <img src="https://www.instagram.com/p/CRMUyGggUWk/?igsh=MWdjdjF0NHNqaHVxZw==" alt="آلیس">
+                <h3>آلیس</h3>
+                <p>قیمت: 400,000 تومان</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- درباره ما -->
+    <section id="about">
+        <h2>درباره ما</h2>
+        <p>ما در فروشگاه بافتنی گلی انواع محصولات بافتنی دست‌ساز را با کیفیت عالی و قیمت مناسب ارائه می‌کنیم.</p>
+    </section>
+
+    <!-- تماس با ما -->
+    <section id="contact">
+        <h2>تماس با ما</h2>
+        <p>ایمیل: info@goli-shop.com</p>
+        <p>شماره تماس: ۰۹۱۲xxxxxxx</p>
+    </section>
+
+    <footer>
+        <p>© 2025 فروشگاه بافتنی گلی</p>
+    </footer>
+
+    <script>
+        // اسلایدر ساده
+        let slides = document.querySelectorAll('.slide');
+        let current = 0;
+        function showSlide(index){
+            slides.forEach(s => s.classList.remove('active'));
+            slides[index].classList.add('active');
+        }
+        setInterval(() => {
+            current = (current + 1) % slides.length;
+            showSlide(current);
+        }, 3000);
+    </script>
+</body>
+    </html>
