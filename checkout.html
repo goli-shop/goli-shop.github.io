@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>پرداخت</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        const url = new URL(window.location.href);
+        const name = url.searchParams.get("name");
+        const price = url.searchParams.get("price");
+    </script>
+
+</head>
+<body>
+
+<header>
+    <h1>پرداخت آنلاین</h1>
+    <a href="products.html" class="btn">بازگشت</a>
+</header>
+
+<section class="checkout">
+    <h2 id="productName"></h2>
+    <p id="productPrice"></p>
+    
+    <a id="payButton" class="btn pay">پرداخت آنلاین</a>
+</section>
+
+<script>
+    document.getElementById("productName").innerHTML = name;
+    document.getElementById("productPrice").innerHTML = price + " تومان";
+
+    document.getElementById("payButton").href =
+        "https://www.zarinpal.com/pg/StartPay/" + "XXXXXXXXXXXXX";
+</script>
+
+</body>
+</html>
