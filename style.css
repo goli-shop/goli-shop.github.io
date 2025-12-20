@@ -1,0 +1,58 @@
+body {
+    direction: rtl;
+    margin: 0;
+    font-family: tahoma;
+    background: #fff9e6;
+}
+
+header {
+    background: #ffcc80;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+.hero {
+    text-align: center;
+    padding: 80px;
+    background: url('https://i.ibb.co/F3p3z1b/bg.jpg');
+    background-size: cover;
+    color: #000;
+}
+
+.btn {
+    display: inline-block;
+    background: #ff8c00;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 20px;
+}
+
+.product-card {
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.checkout {
+    text-align: center;
+    padding: 40px;
+  }
